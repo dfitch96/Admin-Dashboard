@@ -17,7 +17,6 @@ html {
 
 
 
-
 /* LAYOUT STYLES */
 .grid-container{
     display: grid;
@@ -50,8 +49,19 @@ html {
 
 
 
-/* COMPONENT STYLES */
+/* Typography */
 
+.sidebar h1{
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--sidebar-text-color);
+}
+
+
+
+
+/* COMPONENT STYLES */
 
 /* Header Components */
 .header-top-container{
@@ -100,11 +110,7 @@ html {
     display: flex;
     align-items: center;
     grid-row: 1 / 2;
-    font-size: 2rem;
-    font-weight: 900;
-    padding: 15px;
-    color: var(--sidebar-text-color);
-    
+    padding: 15px;  
 }
 
 .dashboard-icon{
