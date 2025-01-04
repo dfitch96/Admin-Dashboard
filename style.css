@@ -1,12 +1,24 @@
+
+:root{
+    --primary-color: rgb(44, 184, 240);
+    --secondary-color: rgb(226, 217, 217);
+    --sidebar-text-color: white;
+    --font-family: 'Roboto', sans-serif;
+}
+
+
 body,
 html {
     height: 100%;
     margin: 0;
     box-sizing: border-box;
-    font-family: Roboto, sans-serif;
+    font-family: var(--font-family);
 }
 
 
+
+
+/* LAYOUT STYLES */
 .grid-container{
     display: grid;
     grid-template-columns: .5fr 3fr;
@@ -17,7 +29,7 @@ html {
 .sidebar{
     display: grid;
     grid-template-rows: .1fr 1fr;
-    background-color: rgb(44, 184, 240);
+    background-color: var(--primary-color);
     grid-column: 1 / 2;
     grid-row: 1 / 3;
 }
@@ -30,9 +42,21 @@ html {
     
 }
 
+.main-content{
+    grid-row: 2 / 3;
+    background-color: var(--secondary-color);
+}
+
+
+
+
+/* COMPONENT STYLES */
+
+
+/* Header Components */
 .header-top-container{
     display: grid;
-    grid-template-columns: 1fr .1fr .1fr .1fr;
+    grid-template-columns: 1fr .15fr .15fr .15fr;
     align-items: center;
 }
 
@@ -62,39 +86,56 @@ html {
     grid-column: 4 / 5;
 }
 
-
-
-.header-profile-container{
+.header-bottom-container{
     display: grid;
+    grid-template-columns: 1fr .2fr .2fr .2fr;
+    align-items: center;
 }
 
-.main-content{
-    grid-row: 2 / 3;
-    background-color: rgb(226, 217, 217);
-}
 
-.dashboard-header{
+
+/* Sidebar Components */
+
+.sidebar-header{
+    display: flex;
+    align-items: center;
     grid-row: 1 / 2;
     font-size: 2rem;
     font-weight: 900;
     padding: 15px;
-    color: white;
+    color: var(--sidebar-text-color);
+    
 }
 
-.dashboard-nav{
+.dashboard-icon{
+    height: 3rem;
+    margin-right: 15px;
+    width: auto;
+}
+
+
+.sidebar-nav{
     display: flex;
     flex-direction: column;
     font-weight: 700;
     font-size: 1.25rem;
 }
 
-.dashboard-nav > ul{
+.nav-icon{
+    height: 1.25rem;
+    margin-right: 15px;
+    width: auto;
+}
+
+.sidebar-nav > ul{
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
 
-.dashboard-nav li{
+.sidebar-nav li{
+    display: flex;
+    align-items: center;
     margin: 25px;
     
 }
@@ -103,7 +144,7 @@ html {
     margin-bottom: 50px;
 }
 
-a{
+.sidebar a{
     text-decoration: none;
-    color: white;
+    color: var(--sidebar-text-color);
 }
