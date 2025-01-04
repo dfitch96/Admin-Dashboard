@@ -75,14 +75,24 @@ html {
     height: 25px;
     width: 650px;
     margin: 24px;
+    margin-left: 0;
     border-radius: 15px;
     background-color: rgb(226, 217, 217);
     border: none;
 } 
 
 .header-top-searchbar{
+    display: flex;
+    align-items: center;
+    justify-content: start;
     margin-left: 24px;
     grid-column: 1 / 2;
+}
+
+.header-top-search-icon{
+    height: 25px;
+    margin-right: 15px;
+    width: auto;
 }
 
 .header-top-notifications{
