@@ -16,7 +16,7 @@ html {
 
 .sidebar{
     display: grid;
-    grid-template-rows: .1fr .5fr 1fr;
+    grid-template-rows: .1fr 1fr;
     background-color: rgb(44, 184, 240);
     grid-column: 1 / 2;
     grid-row: 1 / 3;
@@ -43,16 +43,23 @@ html {
 .dashboard-nav{
     display: flex;
     flex-direction: column;
+    font-weight: 700;
+    font-size: 1.25rem;
 }
 
 .dashboard-nav > ul{
+    margin: 0;
+    padding: 0;
     list-style-type: none;
-    padding: 15px;
 }
 
 .dashboard-nav li{
-    margin: 15px;
+    margin: 25px;
     
+}
+
+#communities-link{
+    margin-bottom: 50px;
 }
 
 a{
