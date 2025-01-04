@@ -66,7 +66,7 @@ html {
 /* Header Components */
 .header-top-container{
     display: grid;
-    grid-template-columns: 1fr .15fr .15fr .15fr;
+    grid-template-columns: .95fr 75px 75px 100px;
     align-items: center;
 }
 
@@ -104,12 +104,23 @@ html {
 
 .header-top-name{
     grid-column: 4 / 5;
+    font-weight: 800;
 }
 
 .header-bottom-container{
     display: grid;
     grid-template-columns: 1fr .2fr .2fr .2fr;
     align-items: center;
+}
+
+.header-top-notifications > img{
+    height: 2rem;
+    width: auto;
+}
+
+.header-top-profile-picture > img{
+    height: 3rem;
+    width: auto;
 }
 
 
@@ -164,3 +175,5 @@ html {
     text-decoration: none;
     color: var(--sidebar-text-color);
 }
+
+
