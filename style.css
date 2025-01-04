@@ -25,6 +25,41 @@ html {
 .header{
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    display: grid;
+    grid-template-rows: .80fr 1fr;
+    
+}
+
+.header-search-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-search-container > ul{
+    display: flex;
+    list-style-type: none;
+    margin: 24px;
+    padding: 0;
+    align-items: center;
+}
+
+.header-search-container li{
+    margin-right: 40px;
+    
+}
+
+.header-search-container  input{
+    
+    height: 25px;
+    width: 650px;
+    margin: 24px;
+    border-radius: 15px;
+    background-color: rgb(226, 217, 217);
+    border: none;
+}
+
+.header-profile-container{
+    display: flex;
 }
 
 .main-content{
