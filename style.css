@@ -37,7 +37,7 @@ html {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     display: grid;
-    grid-template-rows: .80fr 1fr;
+    grid-template-rows: 1fr 1fr;
     
 }
 
@@ -122,7 +122,7 @@ html {
 /* Bottom Container Component */
 .header-bottom-container{
     display: grid;
-    grid-template-columns: 1fr .2fr .2fr .2fr;
+    grid-template-columns: 1fr .5fr;
     align-items: center;
 }
 
@@ -152,7 +152,32 @@ html {
     font-weight: 700;
 }
 
+.action-items{
+    display: flex;
+    justify-content: space-evenly;
+}
 
+.action-items button{
+    background-color: var(--primary-color);
+    border: none;
+    height: 2.5rem;
+    width: 6rem;
+    border-radius: 20px;
+    color: var(--sidebar-text-color);
+    font-weight: 900;
+}
+
+.action-items button:hover{
+    border: 1px solid var(--primary-color);
+    color: black;
+    background-color: white; 
+}
+
+.action-items button:active{
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--sidebar-text-color);
+}
 
 /* Sidebar Components */
 
