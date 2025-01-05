@@ -311,6 +311,7 @@ html {
     flex-direction: column;
     justify-content: space-between;
     padding: 25px;
+    overflow: auto;
 }
 
 .announcements-card h4{
@@ -328,4 +329,26 @@ html {
 
 .announcements-card > div:last-child {
     border-bottom: none; /* Removes the border from the last item */
+}
+
+
+.trending-card{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    
+}
+
+.trending-card-item{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    margin-bottom: 15px;
+
+}
+
+.trending-card-item-logo{
+    height: 4rem;
+    width: auto;
+    
 }
