@@ -306,3 +306,26 @@ html {
 }
 
 
+.announcements-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.announcements-card h4{
+    margin: 0;
+}
+.announcements-card p{
+    margin: 0;
+}
+
+.announcements-card > div {
+    border-bottom: 1px solid #ccc; /* Adds a thin gray line */
+    padding-bottom: 10px; /* Optional: Adds spacing below the content */
+    margin-bottom: 10px; /* Optional: Adds spacing between items */
+}
+
+.announcements-card > div:last-child {
+    border-bottom: none; /* Removes the border from the last item */
+}
