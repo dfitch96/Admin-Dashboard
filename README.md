@@ -4,4 +4,4 @@ Live Preview: https://dfitch96.github.io/Admin-Dashboard/
 
 
 ## Acknowledgments
-Icons sourced from [flaticon](https://www.flaticon.com/search?word=batman)
+All avatar icons are found at [flaticon](https://www.flaticon.com/search?word=batman)
